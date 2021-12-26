@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  color: #eee;
+}
+
+#root {
+  background: #000;
+}
+
+.nav {
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-elem {
+  text-decoration: none;
+  padding: 2rem;
+  color: #eee;
+  font-size: 28px;
+  letter-spacing: 1.25px;
+}
+
+.nav-elem:hover {
+  color: #ccc;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1130px) {
+  .nav {
+    display: none;
+  }
+  .nav-bar {
+    right: 0px;
+    top: 0rem;
+  }
+}
+
+@media (min-width: 1130px) {
+  .hamburger {
+    display: none;
+  }
+  .hamburgerDropDown {
+    display: none;
+  }
+  .hamburgerDiv {
+    display: none;
+  }
+  .nav-bar > div {
+    display: none;
+  }
+}
